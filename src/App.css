@@ -1,0 +1,214 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Sono:wght@800&family=Lilita+One&family=Montserrat');
+
+/* Apply general styles to the entire page */
+#root {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Nunito';
+}
+
+/* Header styles for the home page */
+.header {
+  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fearthsky.org%2Fastronomy-essentials%2Fwhat-is-the-milky-way-galaxy%2F&psig=AOvVaw2uYawP1LOxPlmL0kpGNVcX&ust=1691946529391000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJDc1JDO14ADFQAAAAAdAAAAABAE');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  padding: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+.title-text {
+  font-family: 'Lilita One';
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding: 10px;
+  background-color: white;
+  background-image: linear-gradient(45deg, #F5F5DC, #B03A2E);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+/* Navigation bar styles */
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 4rem;
+  margin: auto;
+}
+
+/* Styles for showing all content creators */
+.ShowCreators {
+  background-color: lightcyan;
+  padding: 50px;
+}
+
+.creators-cards {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+/* Styles for content creator cards */
+.content-creator-card {
+  transition: 0.3s;
+  padding: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  /* Add shadows and styling for a card effect */
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  border-radius: 5px;
+  backdrop-filter: blur(14px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem 0.5rem;
+  width: 25vw;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.content-creator-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content-creator-card-details {
+  padding: 2px 16px;
+  flex-grow: 1;
+}
+
+.description {
+  font-size: 0.75em;
+  /* Limit description lines and add ellipsis for overflow */
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  color: black;
+}
+
+.content-creator-card-image img {
+  width: auto;
+  height: auto;
+  max-height: 200px;
+  max-width: 200px;
+  align-self: center;
+  flex-grow: 1;
+  object-fit: contain;
+}
+
+.pointer-link {
+  cursor: pointer;
+}
+
+/* Styles for viewing a single content creator */
+.ViewOne {
+  padding: 20px;
+  display: flex;
+  margin: auto;
+  max-width: 50%;
+  max-height: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+
+.ViewOne-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.creator-first {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+#creator-name {
+  margin-bottom: 0;
+}
+
+.social-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for social media buttons */
+.btns {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -0.25rem;
+  padding: 0 0.1rem;
+  transition: color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btns:hover {
+  box-shadow: inset 400px 0 0 0 #54b3d6;
+  color: white;
+}
+
+/* Styles for Add/Edit forms */
+form p {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+form label {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.submit-edit-button {
+  background-color: var(--primary);
+  color: var(--primary-inverse);
+  transition-duration: 0.4s;
+  width: 250px;
+  margin: auto;
+}
+
+.submit-edit-button:hover {
+  background-color: #0F52BA;
+}
+
+.add-edit-form {
+  margin: auto;
+  max-width: 70%;
+  max-height: 70%;
+  padding: 20px;
+}
+
+#delete-button {
+  color: white;
+  background-color: rgb(255, 105, 97);
+  transition-duration: 0.4s;
+  width: 250px;
+  margin: auto;
+}
+
+#delete-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
